@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundBlue"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.develop.boris.mobilepos_ver3.myDetail.MyDetailSaleActivity"
+    tools:showIn="@layout/activity_my_detail_sale">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="售貨單號:"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="銷售日期:"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="銷售人員:"
+                            android:textSize="24sp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="客戶名稱:"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="消費類型:"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_sa_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="售貨單號"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/tv_sa_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="銷售日期"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_salesman"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="銷售人員"
+                            android:textSize="24sp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_sa_c_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="客戶名稱or車牌"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_consume_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:gravity="center_vertical"
+                            android:text="消費類型"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_p_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:ems="6"
+                            android:hint="輸入商品名稱"
+                            android:inputType="textPersonName"
+                            android:selectAllOnFocus="false"
+                            android:singleLine="true"
+                            android:textSize="20sp"
+                            android:visibility="visible"/>
+
+                        <EditText
+                            android:id="@+id/et_p_model"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:ems="6"
+                            android:hint="輸入商品型號"
+                            android:inputType="textPersonName"
+                            android:textSize="20sp"
+                            android:visibility="visible"/>
+
+                        <EditText
+                            android:id="@+id/et_p_barcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:ems="6"
+                            android:hint="輸入商品barcode"
+                            android:inputType="number"
+                            android:textSize="20sp"
+                            android:visibility="visible"/>
+
+                        <EditText
+                            android:id="@+id/et_p_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:ems="6"
+                            android:hint="輸入商品類別"
+                            android:inputType="number"
+                            android:textSize="20sp"
+                            android:visibility="visible"/>
+
+
+                        <EditText
+                            android:id="@+id/et_p_unitName"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:ems="6"
+                            android:hint="輸入商品單位名稱"
+                            android:inputType="textPersonName"
+                            android:textSize="20sp"
+                            android:visibility="visible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="名稱"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="售價"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="數量"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:text="小計"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_sale_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="總價:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_sa_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="總價"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

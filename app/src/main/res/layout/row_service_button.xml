@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adaptorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/btn_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_background_selector"
+        android:text="Button"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14sp"/>
+
+</LinearLayout>

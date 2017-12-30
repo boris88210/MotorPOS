@@ -1,0 +1,270 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_scaned_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundBlue"
+    android:orientation="vertical"
+    android:paddingBottom="56dp"
+    tools:context="com.develop.boris.mobilepos_ver3.SaleBuilderActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_sale_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_vertical"
+                        android:text="售貨單號:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="銷售日期:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_vertical"
+                        android:text="銷售人員:"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="客戶名稱:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="消費類型:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="里程數:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ly_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_sale_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="售貨單號"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/tv_sale_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="建立日期"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/tv_sale_customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="客戶名稱"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"
+                        android:visibility="visible"/>
+                    <EditText
+                        android:id="@+id/et_sale_customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_background"
+                        android:ems="6"
+                        android:hint="請輸入客戶名稱"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+
+                    <Spinner
+                        android:id="@+id/spinner_consume_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorBackground"/>
+
+                    <EditText
+                        android:id="@+id/et_sale_mileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_background"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入里程數"
+                        android:inputType="number"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="名稱"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:gravity="right|center_vertical"
+                        android:text="售價"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="right|center_vertical"
+                        android:text="數量"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:gravity="right|center_vertical"
+                        android:text="小計"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <com.develop.boris.mobilepos_ver3.myWidget.MyListView
+                    android:id="@+id/lv_scanned_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                </com.develop.boris.mobilepos_ver3.myWidget.MyListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text="總價:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_sale_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:text="總價"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

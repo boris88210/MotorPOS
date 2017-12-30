@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">機車POS</string>
+
+    <string name="action_edit">編輯</string>
+    <string name="action_save">存檔</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Page Title -->
+    <string name="title_activity_sale_builder">建立銷售單</string>
+    <string name="title_activity_category_setting">類別設定</string>
+    <string name="title_activity_service_setting">服務項目設定</string>
+    <string name="title_activity_my_detail_customer">客戶資料</string>
+    <string name="title_activity_my_detail_sale">銷售單資料</string>
+    <string name="title_activity_my_detail_product">商品資料</string>
+    <string name="title_activity_drawer2">機車POS</string>
+    <string name="title_activity_my_detail_supplier">供應商資料</string>
+    <string name="title_activity_quantity_alert_page">庫存不足商品</string>
+
+
+    <!-- Bottom Navigation -->
+    <string name="title_home">掃描器</string>
+    <string name="title_dashboard">服務項目</string>
+    <string name="title_notifications">銷售清單</string>
+    <string name="title_purchase_list">採購清單</string>
+
+    <!-- Button -->
+    <string name="btn_to_maintain_selection">保養</string>
+
+    <array name="list_spinner">
+        <item>客戶</item>
+        <item>商品</item>
+        <item>售貨單</item>
+        <item>供應商</item>
+    </array>
+    <string name="title_activity_purchase">進貨</string>
+
+
+</resources>

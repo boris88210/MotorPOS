@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfd8dc"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.develop.boris.mobilepos_ver3.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/search_144px_48dp" />
+
+            <EditText
+                android:id="@+id/et_condition"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imgBtn_delete"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:visibility="gone"-->
+                <!--app:srcCompat="@mipmap/delet_cross_72px_48dp" />-->
+
+            <ImageView
+                android:id="@+id/imgBtn_delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/delet_cross_72px_48dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="搜尋"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/lv_pubs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:scrollbars="none"/>
+
+</LinearLayout>

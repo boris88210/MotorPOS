@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.develop.boris.mobilepos_ver3.myDetail.MyDetailCustomerActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@mipmap/edit_144px_48dp"
+        android:title="@string/action_edit"
+        app:showAsAction="ifRoom" />
+</menu>

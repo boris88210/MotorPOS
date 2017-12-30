@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="類別設定"/>
+        <item
+            android:id="@+id/nav_service_setting"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="保養服務設定"/>
+        <item
+            android:id="@+id/nav_cost"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="成本管理"/>
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="統計數據"/>
+    </group>
+
+    <item android:title="檔案管理">
+        <menu>
+            <item
+                android:id="@+id/nav_export"
+                android:icon="@drawable/ic_menu_share"
+                android:title="資料匯出"/>
+            <item
+                android:id="@+id/nav_import"
+                android:icon="@drawable/ic_menu_send"
+                android:title="資料匯入"/>
+        </menu>
+    </item>
+
+</menu>

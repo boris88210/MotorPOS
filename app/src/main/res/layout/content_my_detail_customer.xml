@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/BackgroundBlue"
+              android:orientation="vertical"
+              android:padding="8dp"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.develop.boris.mobilepos_ver3.myDetail.MyDetailCustomerActivity"
+              tools:showIn="@layout/activity_my_detail_customer">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="客戶車牌:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="客戶車牌"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="6"
+                    android:hint="輸入客戶車牌"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="客戶名稱:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="客戶名稱"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="6"
+                    android:hint="輸入客戶名稱"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="住家電話:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_c_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="住家電話"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_c_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="6"
+                    android:hint="輸入客戶住家電話"
+                    android:inputType="number"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="手機號碼:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_c_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="手機號碼"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/et_c_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="6"
+                    android:hint="輸入客戶手機號碼"
+                    android:inputType="number"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="建檔日期:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_c_create_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="建檔日期"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maintain_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="保養紀錄:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <ListView
+                    android:id="@+id/lv_consume_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+                    tools:listheader="保養紀錄">
+
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <Button
+            android:id="@+id/btn_to_maintain_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/button_background_selector"
+            android:text="@string/btn_to_maintain_selection"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

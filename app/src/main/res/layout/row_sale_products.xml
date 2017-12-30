@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adaptorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="0dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sale_products_name"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="名稱"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_sale_product_price"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="售價"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_sale_product_qty"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="數量"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_sale_product_subtotal"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="小計"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delet"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0"
+        android:background="@color/secondaryColor"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="@color/colorBackground" />
+
+
+</LinearLayout>

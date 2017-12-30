@@ -1,0 +1,160 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/fragment_scanner"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/BackgroundBlue"
+                                             android:orientation="vertical"
+                                             tools:context="com.develop.boris.mobilepos_ver3.SaleBuilderActivity">
+
+    <SurfaceView
+        android:id="@+id/cameraPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/BackgroundBlue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/scanResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="請把鏡頭對準條碼"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            tools:layout_editor_absoluteX="108dp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:elevation="3dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="商品條碼:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_scanResult"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="條碼內容"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"/>
+
+                    <Button
+                        android:id="@+id/btn_search_barcode"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@mipmap/search_144px_48dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="商品名稱:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/et_scan_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="單位:  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_product_unit"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="數量:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_scan_product_qty"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

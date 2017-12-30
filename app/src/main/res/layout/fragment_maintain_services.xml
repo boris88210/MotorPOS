@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_scaned_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="56dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="@color/BackgroundBlue"
+    tools:context="com.develop.boris.mobilepos_ver3.SaleBuilderActivity">
+
+
+    <ListView
+        android:id="@+id/lv_service_view"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

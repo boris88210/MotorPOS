@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundBlue"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.develop.boris.mobilepos_ver3.myDetail.MyDetailSupplierActivity"
+    tools:showIn="@layout/activity_my_detail_supplier">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商名稱:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商電話:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商手機:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商傳真:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商E-mail:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="供應商地址:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_supplier_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_supplier_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商名稱:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_supplier_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商電話:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_supplier_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商手機:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_supplier_fax"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商傳真:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_supplier_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商E-mail"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_supplier_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="供應商地址:"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_supplier_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/et_supplier_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商名稱"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_supplier_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商電話"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_supplier_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商手機:"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_supplier_fax"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商傳真:"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_supplier_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商E-mail"
+                        android:inputType="textWebEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/et_supplier_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:hint="請輸入供應商地址:"
+                        android:singleLine="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="建檔時間:"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_supplier_create_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="建檔時間"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
